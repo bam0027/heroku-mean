@@ -47,11 +47,17 @@ export class ContactListComponent implements OnInit {
     var contact: Contact = {
       name: '',
       email: '',
-      email2: '',
       phone: {
         work: '',
         mobile: ''
-      }
+      },
+      client_ip: '',
+      aff_id: '',
+      transaction_id: '',
+      site_id: '',
+      session_id: '',
+      order_id: '',
+      created: ''
     };
 
     // By default, a newly-created contact will have the selected state.

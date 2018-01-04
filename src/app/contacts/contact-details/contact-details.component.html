@@ -15,10 +15,6 @@
       <input class="form-control" name="contact-email" [(ngModel)]="contact.email" placeholder="Email 1"/>
     </div>
     <div class="form-group">
-      <label for="contact-email">Email2</label>
-      <input class="form-control" name="contact-email2" [(ngModel)]="contact.email2" placeholder="Email 2"/>
-    </div>
-    <div class="form-group">
       <label for="contact-phone-mobile">Mobile</label>
       <input class="form-control" name="contact-phone-mobile" [(ngModel)]="contact.phone.mobile" placeholder="Mobile"/>
     </div>
@@ -26,6 +22,36 @@
       <label for="contact-phone-work">Work</label>
       <input class="form-control" name="contact-phone-work" [(ngModel)]="contact.phone.work" placeholder="Work"/>
     </div>
+    <div class="form-group">
+      <label for="contact-client-ip">Client IP</label>
+      <input class="form-control" name="contact-client-ip" [(ngModel)]="contact.client_ip" placeholder="Client IP"/>
+    </div>
+
+    <div class="form-group">
+      <label for="contact-aff-id">Affiliate ID</label>
+      <input class="form-control" name="contact-aff-id" [(ngModel)]="contact.aff_id" placeholder="Affiliate ID"/>
+    </div>
+    <div class="form-group">
+      <label for="contact-transaction-id">Transaction ID</label>
+      <input class="form-control" name="contact-transaction-id" [(ngModel)]="contact.transaction_id" placeholder="Transaction ID"/>
+    </div>
+    <div class="form-group">
+      <label for="contact-site-id">Site ID</label>
+      <input class="form-control" name="contact-site-id" [(ngModel)]="contact.site_id" placeholder="Site ID"/>
+    </div>
+    <div class="form-group">
+      <label for="contact-session-id">Session ID</label>
+      <input class="form-control" name="contact-session-id" [(ngModel)]="contact.session_id" placeholder="Session ID"/>
+    </div>
+    <div class="form-group">
+      <label for="contact-order-id">Order ID</label>
+      <input class="form-control" name="contact-order-id" [(ngModel)]="contact.order_id" placeholder="Order ID"/>
+    </div>
+    <div class="form-group">
+      <label for="contact-created">Created</label>
+      <input class="form-control" name="contact-created" [(ngModel)]="contact.created" placeholder="Created"/>
+    </div>
+
     <button class="btn btn-primary" *ngIf="!contact._id" (click)="createContact(contact)">Create</button>
     <button class="btn btn-info" *ngIf="contact._id" (click)="updateContact(contact)">Update</button>
     <button class="btn btn-danger" *ngIf="contact._id" (click)="deleteContact(contact._id)">Delete</button>
