@@ -5,5 +5,12 @@ export class Contact {
   phone: {
     mobile: string;
     work: string;
-  }
-}}
+  }  
+  client_ip: string;
+  aff_id: string;
+  transaction_id: string;
+  site_id: string;
+  session_id: string;
+  order_id: string;
+  created: string;
+}
