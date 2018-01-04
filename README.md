@@ -1,16 +1,3 @@
-Notes from Burt
----
-In order to get final tutorial working:
-- needed to ensure mongodb was installed properly.
-- needed to clear cache: https://github.com/angular/angular-cli/issues/7334
-    -  rm -rf node_modules
-    -  rm package-lock.json
-    -  npm cache verify
-    -  npm install
-- needed to complete all the code from the tutorial, not sure if there was a chicken-or-egg issues
-- seems like my "npm install express body-parser --save" was incorrect
-- ended up running "npm install --save @angular/cli @angular/compiler-cli", that was important
-
 # MeanContaclistAngular2
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.5.0.
