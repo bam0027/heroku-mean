@@ -5,7 +5,7 @@ export class Contact {
   phone: {
     mobile: string;
     work: string;
-  }  
+  };  
   client_ip: string;
   aff_id: string;
   transaction_id: string;
