@@ -1,7 +1,7 @@
 <div *ngIf="contact" class="row">
   <div class="col-md-12">
     <h2 *ngIf="contact._id">Contact Details</h2>
-    <h2 *ngIf="!contact._id">Create Contact</h2>
+    <h2 *ngIf="!contact._id">New Contact</h2>
   </div>
 </div>
 <div *ngIf="contact" class="row">
@@ -22,35 +22,6 @@
       <label for="contact-phone-work">Work</label>
       <input class="form-control" name="contact-phone-work" [(ngModel)]="contact.phone.work" placeholder="0123456789"/>
     </div>
-    <div class="form-group">
-      <label for="contact-client-ip">Work</label>
-      <input class="form-control" name="contact-client-ip" [(ngModel)]="contact.client_ip" placeholder=""/>
-    </div>
-    <div class="form-group">
-      <label for="contact-aff-id">Work</label>
-      <input class="form-control" name="contact-aff-id" [(ngModel)]="contact.aff_id" placeholder=""/>
-    </div>
-    <div class="form-group">
-      <label for="contact-transaction-id">Work</label>
-      <input class="form-control" name="contact-transaction-id" [(ngModel)]="contact.transaction_id" placeholder=""/>
-    </div>
-    <div class="form-group">
-      <label for="contact-site-id">Work</label>
-      <input class="form-control" name="contact-site-id" [(ngModel)]="contact.site_id" placeholder=""/>
-    </div>
-    <div class="form-group">
-      <label for="contact-session-id">Work</label>
-      <input class="form-control" name="contact-session-id" [(ngModel)]="contact.session_id" placeholder=""/>
-    </div>
-    <div class="form-group">
-      <label for="contact-order-id">Work</label>
-      <input class="form-control" name="contact-order-id" [(ngModel)]="contact.order_id" placeholder=""/>
-    </div>
-    <div class="form-group">
-      <label for="contact-created">Work</label>
-      <input class="form-control" name="contact-created" [(ngModel)]="contact.created" placeholder=""/>
-    </div>
-
     <button class="btn btn-primary" *ngIf="!contact._id" (click)="createContact(contact)">Create</button>
     <button class="btn btn-info" *ngIf="contact._id" (click)="updateContact(contact)">Update</button>
     <button class="btn btn-danger" *ngIf="contact._id" (click)="deleteContact(contact._id)">Delete</button>
